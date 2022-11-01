@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
 
 export default function App() {
   return (
@@ -17,14 +17,15 @@ export default function App() {
       </View>
       </View>
       
-      <View>
-        <Text>Book title <Text>1</Text></Text>
-        <Text>By Some Random dude</Text>
+      <View style={styles.book}>
+        <Text style={styles.booktitle}>Book title <Text style={styles.booktitle}>1</Text></Text>
+        <Text style={styles.auteur}>By Some Random dude</Text>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </Text>
         <View style={styles.code}>
           <Text>ISBN 978-8-2665-1860-1</Text>
-          <Text>READ</Text>
+          <Button title="READ" style={styles.button}/>
+          
         </View>
         
       </View>
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
   },
   titel: {
     
-    fontSize: 32,
+    fontSize: 40,
     fontWeight: "bold",
   },
   head: {
@@ -67,5 +68,22 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: "row",
     justifyContent:"space-between",
+  },
+  button:{
+    buttonColor:"Black",
+    
+  },
+  book:{
+    borderBottomWidth: 3,
+    borderBottomColor:"Black",
+    paddingRight: 10,
+    paddingBottom: 10,
+  },
+  booktitle:{
+    fontSize:30,
+    marginTop:40,
+  },
+  auteur:{
+    marginBottom:20,
   }
 });
