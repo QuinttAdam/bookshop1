@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
@@ -8,8 +8,13 @@ export default function App() {
 
       <View style={styles.head}>
       <Text style={styles.titel}>Bookshop</Text>
-      
-      <Text>1</Text>
+
+      <View>
+        <Image style={styles.icon}
+              source={require('./assets/winkelkar.png')}
+            />
+        <Text>1</Text>
+      </View>
       </View>
       
       
@@ -31,7 +36,12 @@ const styles = StyleSheet.create({
     margin: 20,
     display: 'flex',
     flexDirection: "row",
+    justifyContent: 'space-between'
     
 
+  },
+  icon: {
+    width: 40,
+    maxHeight: 40,
   }
 });
