@@ -4,17 +4,34 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
+
+      <View style={styles.head}>
+      <Text style={styles.titel}>Bookshop</Text>
+      
+      <Text>1</Text>
+      </View>
+      
+      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    // backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+
   },
+  titel: {
+    marginTop: 40,
+    margin: 20,
+    fontSize: 32,
+    fontWeight: "bold",
+  },
+  head: {
+    // backgroundColor: "#000",
+    // display: 'flex',
+    // justifyContent: "space-evenly",
+    //hey
+
+  }
 });
