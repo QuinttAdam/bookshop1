@@ -22,16 +22,16 @@ const styles = StyleSheet.create({
 
   },
   titel: {
-    marginTop: 40,
-    margin: 20,
+    
     fontSize: 32,
     fontWeight: "bold",
   },
   head: {
-    // backgroundColor: "#000",
-    // display: 'flex',
-    // justifyContent: "space-evenly",
-    //hey
+    marginTop: 40,
+    margin: 20,
+    display: 'flex',
+    flexDirection: "row",
+    
 
   }
 });
